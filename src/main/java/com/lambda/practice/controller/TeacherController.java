@@ -17,7 +17,7 @@ public class TeacherController {
 
     @GetMapping
     public String get() {
-        Teacher teacher = teacherService.world();
+        Teacher teacher = teacherService.world("haneul");
         return "teacher";
     }
 }
