@@ -1,5 +1,6 @@
 package com.lambda.practice.controller;
 
+import com.lambda.practice.domain.Teacher;
 import com.lambda.practice.service.TeacherService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ public class TeacherController {
 
     @GetMapping
     public String get() {
-        return "Hello";
+        Teacher teacher = teacherService.world();
+        return "teacher";
     }
 }
